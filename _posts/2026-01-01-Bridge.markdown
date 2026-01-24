@@ -72,6 +72,8 @@ $$
 
 You can access the full documentation [here](https://drive.google.com/file/d/1m-5r0eqV4NRF8oGtmTI7A6ttSU9DQUL4/view?usp=drive_link).
 
+![Member Force Analysis]({{ '/assets/img/real-Bridge.png' | prepend: site.baseurl }})
+
 ---
 
 <!-- MathJax Integration for LaTeX -->
