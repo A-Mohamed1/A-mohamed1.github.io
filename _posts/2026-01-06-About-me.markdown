@@ -5,11 +5,29 @@ date: 2026-01-06 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+Mindvalley | Sheikh Zayed 
+Instructor (Part-time) | 07/2023 – 09/2023 | 07/2025 – present 
+• I worked as an instructor in Mindvalley, I teach Python, C++, EV3, Wedo, App Inventor, and Scratch. 
+Junior Teaching Assistant | University of Science and Technology at Zewailcity 
+Python JTA | summer 2023  
+Contributor | NASA Space Apps Challenge 
+Cairo, 2024 
+• I was the team leader and video editor for the team to develop an interactive website illustrating the 
+solar system, providing educational content on each planet with different visual contents.  
+(https://rozenverse.netlify.app/) 
+Plasma Actuators and Flow Control Research | University of Science and Technology at Zewailcity 
+Research Participant | 08/2025 – 09/2025  
+• Engaged in experimental and computational work on plasma actuators and plasma-based flow 
+control for aerodynamic applications. 
+• Investigated electrode geometries and optimized actuator performance through simulations and lab 
+testing. 
+Alliance International Group for Equipment Trading and Logistics – Fire Division 
+Engineering Intern | 07/2025 – 09/2025 
+• Participated in the technical and logistical operations for fire protection systems and related equipment. 
+Robotics and Control Projects | University of Science and Technology at Zewailcity 
+Project Member | 07/2025 – Present 
+• Assisted in the design and development of a linear inverted pendulum for control system studies. 
+•  Collaborated on UAV design and build, integrating aerodynamic design and propulsion systems.
 
 {% highlight ruby %}
 def print_hi(name)
