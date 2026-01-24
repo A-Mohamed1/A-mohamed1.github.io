@@ -9,7 +9,9 @@ tags: [Robotics, MATLAB, Arduino, Kinematics]
 ---
 
 ## Project Overview: Multi-DOF Robotic Manipulator
-
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/Robotic-assembly.png" width="65%">
+</p>
 This project presents the complete engineering lifecycle of a multi-degree-of-freedom (Multi-DOF) robotic manipulator, transitioning from mathematical kinematic modeling to a functional physical prototype. The objective was to bridge theoretical robotics with practical application by designing a system capable of precise, real-time motions.
 
 ### System Configuration and Design
@@ -18,6 +20,10 @@ This project presents the complete engineering lifecycle of a multi-degree-of-fr
 - **Mechanical Fabrication:** Structural components were designed in CAD and fabricated using laser cutting from 3 mm plywood.
 - **Link Specifications:** First link \(L_1 = 0.14\,\mathrm{m}\), second link \(L_2 = 0.12\,\mathrm{m}\).
 - **Control Hardware:** Arduino Uno interfaced with three servo motors for joint actuation.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/Simulation.png" width="65%">
+</p>
 
 ### Technical Methodology
 
