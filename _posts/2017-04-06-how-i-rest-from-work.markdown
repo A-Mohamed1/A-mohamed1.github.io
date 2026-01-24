@@ -13,6 +13,7 @@ tags:
 ## Project Overview
 
 This project involves the comprehensive mathematical modeling, design, and transient performance analysis of a simplified cold gas rocket engine system.
+Link for the documentation: https://drive.google.com/file/d/1JaMCLVBxpLGqF0QaDhQRlJG_UjNIgV9N/view?usp=sharing.
 
 The study focuses on the gas dynamics of a pressurized oxidizer source and its temporal evolution as tank pressure depletes during operation.
 
