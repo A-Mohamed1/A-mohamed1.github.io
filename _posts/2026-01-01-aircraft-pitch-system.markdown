@@ -47,7 +47,7 @@ The root at the origin indicates **marginal stability**, requiring feedback cont
 Open-loop longitudinal pitch dynamics:
 
 $$
-P(s) = \frac{\Delta(s)}{\Theta(s)} = \frac{1}{s^3 + 0.739 s^2 + 0.9215 s + 0.1774}
+P(s) = \frac{\Delta(s)}{\Theta(s)} = \frac{1.151 s + 0.1774}{s^3 + 0.739 s^2 + 0.9215 s}
 $$
 
 ### 2. State-Space Representation
@@ -60,9 +60,9 @@ $$
 \end{bmatrix}
 =
 \begin{bmatrix}
--0.313 & -0.0139 & 0 \\
-56.7 & -0.426 & 56.7 \\
-0 & 0 & 0
+-0.313 & 56.7 & 0 \\
+-0.0139 & -0.426 & 0 \\
+0 & 56.7 & 0
 \end{bmatrix}
 \begin{bmatrix}
 \alpha \\ q \\ \theta
@@ -86,7 +86,7 @@ Final tuned gains:
 The PID controller:
 
 $$
-C(s) = 1.7476 \times \frac{s}{(1 + 0.78 s)(1 + 2.2 s)}
+C(s) = 1.7476 \times \frac{(1 + 0.78 s)(1 + 2.2 s)}{s}
 $$
 
 ---
