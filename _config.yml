@@ -1,25 +1,19 @@
-antitle: Hello, world! I'm Abdelrahman Mohamed
-description: > # this means to ignore newlines until "baseurl:"
-  My name is Abdelrahman Mohamed. I am an aerospace engineer at the University of Science and Technology. 
+title: Hello, world! I'm Abdelrahman Mohamed
+description: >
+  My name is Abdelrahman Mohamed. I am an aerospace engineering student
+  at the University of Science and Technology.
+
 permalink: ':title/'
-baseurl: "/flexible-jekyll" # the subpath of your site, e.g. /blog
-url: "https:\\a-mohamed1.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://a-mohamed1.github.io"
 
 # Author Settings
-author: Abdelrahman Mohamed # add your name
-author-img: david-freeman.jpg # add your photo
-about-author:   My name is Abdelrahman Mohamed. I am an aerospace engineer at the University of Science and Technology. # add description
-social-twitter: # add your Twitter handle
-social-facebook: # add your Facebook handle
-social-github: artemsheludko # add your Github handle
-social-linkedin: "https://www.linkedin.com/in/abdelrahman-mohamed-15347b284/" # add your Linkedin handle
-social-email: s-abdelrahman.sayed@zewailcity.edu.eg # add your Email address
-
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
-
-# Tracker
-analytics: # Google Analytics
+author: Abdelrahman Mohamed
+author-img: david-freeman.jpg
+about-author: My name is Abdelrahman Mohamed. I am an aerospace engineering student at the University of Science and Technology.
+social-github: a-mohamed1
+social-linkedin: "https://www.linkedin.com/in/abdelrahman-mohamed-15347b284/"
+social-email: s-abdelrahman.sayed@zewailcity.edu.eg
 
 # Build Settings
 markdown: kramdown
@@ -31,4 +25,8 @@ plugins:
 paginate: 8
 paginate_path: "/page/:num"
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+exclude:
+  - node_modules
+  - gulpfile.js
+  - package.json
+  - yarn.lock
