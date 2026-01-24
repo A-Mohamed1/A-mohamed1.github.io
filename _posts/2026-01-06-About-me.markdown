@@ -2,9 +2,10 @@
 layout: post
 title: "About Me"
 date: 2026-01-06 13:32:20 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img:  # Add image post (optional)
+description: About my experience and background
+pinned: true
 ---
+
 • Instructor (Part-Time) – Mindvalley 07/2023 – 09/2023 | 07/2025 – 11/2025
 Taught programming and robotics courses including Python, C++, LEGO EV3, WeDo, App Inventor, and Scratch, delivering hands-on learning experiences and adapting technical concepts for different age groups.
 
