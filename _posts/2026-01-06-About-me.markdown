@@ -5,20 +5,20 @@ date: 2026-01-06 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-Instructor (Part-Time) – Mindvalley
+• Instructor (Part-Time) – Mindvalley 07/2023 – 09/2023 | 07/2025 – 11/2025
 Taught programming and robotics courses including Python, C++, LEGO EV3, WeDo, App Inventor, and Scratch, delivering hands-on learning experiences and adapting technical concepts for different age groups.
 
-Junior Teaching Assistant – University of Science and Technology at Zewail City
+• Junior Teaching Assistant – University of Science and Technology at Zewail City, summer 2023 
 Supported Python programming courses by assisting students with problem-solving, code debugging, and foundational programming concepts.
 
-Contributor & Team Leader – NASA Space Apps Challenge (Cairo, 2024)
+• Contributor & Team Leader – NASA Space Apps Challenge (Cairo, 2024)
 Led a multidisciplinary team in developing an interactive educational website visualizing the solar system, and served as the video editor responsible for presenting the project effectively.
 
-Research Participant – Plasma Actuators and Flow Control
+• Research Participant – Plasma Actuators and Flow Control 08/2025 – 09/2025 
 Conducted experimental and computational research on plasma-based flow control for aerodynamic applications, investigating electrode geometries and optimizing actuator performance through simulations and laboratory testing.
 
-Engineering Intern – Alliance International Group (Fire Division)
+• Engineering Intern – Alliance International Group (Fire Division)  07/2025 – 09/2025 
 Participated in technical and logistical operations related to fire protection systems and equipment, gaining exposure to real-world engineering practices and industry workflows.
 
-Project Member – Robotics, Control, and UAV Projects
+• Project Member – Robotics, Control, and UAV Projects 07/2025 – Present 
 Contributed to the design and development of a linear inverted pendulum for control system studies and collaborated on UAV design and integration, focusing on aerodynamics and propulsion systems.
