@@ -59,4 +59,132 @@ This analytical approach enabled a detailed understanding of how initial conditi
 <p align="center">
   <img src="{{ site.baseurl }}/assets/img/MatlabRocket.png" width="85%">
 </p>
+---
+## Key Mathematical Frameworks
+---
 
+### 1. Isentropic Tank Blowdown
+
+The tank is modeled as a lumped control volume undergoing an **isentropic expansion**. Pressure and temperature are updated at each time step based on changes in gas density:
+
+**Pressure update:**
+$$
+P_{\text{tank}}^{n+1} = P_{\text{tank}}^{n}
+\left( \frac{\rho_{\text{new}}}{\rho_{\text{old}}} \right)^{\gamma}
+$$
+
+**Temperature update:**
+$$
+T_{\text{tank}}^{n+1} = T_{\text{tank}}^{n}
+\left( \frac{\rho_{\text{new}}}{\rho_{\text{old}}} \right)^{\gamma - 1}
+$$
+
+---
+
+### 2. Nozzle Mass Flow Rate (Choked Flow)
+
+When the nozzle operates under **choked conditions**, the mass flow rate is governed by the stagnation conditions and throat area:
+
+$$
+\dot{m} =
+P_0 A^*
+\sqrt{
+\frac{\gamma}{R T_0}
+\left( \frac{2}{\gamma + 1} \right)^{\frac{\gamma + 1}{\gamma - 1}}
+}
+$$
+
+where:
+- $P_0$ is the stagnation pressure  
+- $T_0$ is the stagnation temperature  
+- $A^*$ is the throat area  
+
+---
+
+### 3. Rayleigh Flow (Heat Addition)
+
+To simulate combustion, heat is added to the flow, increasing the gas temperature to **2200 K**.  
+This results in a loss of stagnation pressure governed by Rayleigh flow relations:
+
+$$
+\frac{P_{02}}{P_{01}} =
+\frac{1 + \gamma M_2^2}{1 + \gamma M_1^2}
+\left(
+\frac{1 + \frac{\gamma - 1}{2} M_1^2}
+{1 + \frac{\gamma - 1}{2} M_2^2}
+\right)^{\frac{\gamma - 1}{\gamma}}
+$$
+
+---
+
+### 4. Normal Shock and Exit Conditions
+
+As tank pressure decreases, the nozzle may no longer sustain supersonic flow, causing a **normal shock** to move inside the nozzle.
+
+The shock Mach number is determined from the pressure balance:
+
+$$
+P_{\text{sup}}
+\left( 1 + \frac{\gamma + 1}{2\gamma} (M_s^2 - 1) \right)
+= P_{\text{atm}}
+$$
+
+The exit Mach number after the shock is:
+
+$$
+M_e =
+\sqrt{
+\frac{\gamma M_s^2 - \frac{2}{\gamma - 1}}
+{1 + \frac{2}{\gamma - 1} M_s^2}
+}
+$$
+
+---
+
+### 5. Propulsion Performance
+
+The total thrust is calculated as the sum of **momentum thrust** and **pressure thrust**:
+
+$$
+F = \dot{m} V_e + (P_e - P_{\text{atm}}) A_e
+$$
+
+The exit velocity is given by:
+
+$$
+V_e = M_e \sqrt{\gamma R T_e}
+$$
+
+The exit temperature is:
+
+$$
+T_e =
+\frac{T_0}{1 + \frac{\gamma - 1}{2} M_e^2}
+$$
+
+---
+
+### 6. Combustor Geometry Design
+
+To ensure efficient heat addition, the combustor is designed to operate at a **low inlet Mach number** $(M_c = 0.1)$.
+
+The required combustor area is:
+
+$$
+A_c =
+\frac{\dot{m} \sqrt{T_0}}
+{P_0}
+\sqrt{
+\frac{R}{\gamma}
+}
+\frac{1}{M_c}
+\left(
+1 + \frac{\gamma - 1}{2} M_c^2
+\right)^{\frac{\gamma + 1}{2(\gamma - 1)}}
+$$
+
+The corresponding combustor diameter is:
+
+$$
+D_c = \sqrt{\frac{4 A_c}{\pi}}
+$$
