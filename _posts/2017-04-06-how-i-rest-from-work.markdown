@@ -3,7 +3,7 @@ layout: post
 title: Design and Analysis of a Cold Gas Rocket Engine
 date: 2026-01-01 13:32:20 +0300
 description: # Add post description (optional)
-img: # Add image post (optional)
+img: RocketDiagram.png # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags:
 ---
