@@ -1,13 +1,100 @@
 ---
 layout: post
-title: Conference on Javascript
-date: 2017-09-10 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: js-1.png # Add image post (optional)
-tags: [Js, Conference] # add tag
+title: Automobile Active Suspension System Control
+date: 2026-01-10 00:00:00 +0300
+img: Quarter-car-model.png
+tags:
 ---
-Jean shorts organic cornhole, gochujang post-ironic chicharrones authentic flexitarian viral PBR&B forage wolf. Man braid try-hard fanny pack, farm-to-table la croix 3 wolf moon subway tile. Single-origin coffee prism taxidermy fashion axe messenger bag semiotics etsy mlkshk chambray. Marfa lumbersexual meditation celiac. Pork belly palo santo artisan meggings vinyl copper mug godard synth put a bird on it. Cloud bread pop-up quinoa, raw denim meditation 8-bit slow-carb. Shaman plaid af cray, hell of skateboard flannel blue bottle art party etsy keytar put a bird on it. Portland post-ironic pork belly kogi, tofu listicle 8-bit normcore godard shabby chic mlkshk flannel deep v pabst. Pork belly kinfolk fingerstache lo-fi raclette. Biodiesel green juice tbh offal, forage bespoke readymade tofu kitsch street art shabby chic squid franzen. Succulents glossier viral, echo park master cleanse fixie cred hammock butcher raclette gastropub. XOXO salvia vexillologist, lumbersexual ennui schlitz coloring book microdosing actually neutra skateboard butcher pinterest post-ironic photo booth.
 
-Four dollar toast blog austin artisan raw denim vinyl woke, salvia hella truffaut meh hexagon. Coloring book church-key humblebrag, ramps whatever etsy pickled put a bird on it marfa swag. Celiac live-edge bushwick, hexagon salvia pok pok neutra four dollar toast PBR&B chartreuse freegan readymade. Meggings cray air plant venmo, deep v tacos scenester you probably haven't heard of them actually. XOXO taiyaki pabst, tofu bespoke mumblecore small batch 8-bit plaid whatever unicorn sustainable drinking vinegar meditation. Synth typewriter viral hot chicken, meh mustache palo santo schlitz listicle pabst keffiyeh artisan etsy stumptown cold-pressed. Occupy locavore cray irony. Chambray whatever vaporware keffiyeh heirloom vice. Single-origin coffee neutra iPhone lyft. Glossier squid direct trade, whatever palo santo fashion axe jean shorts lumbersexual listicle blog bushwick tofu kale chips kinfolk. Bespoke cronut viral paleo, selfies cray blog mustache twee ethical meh succulents bushwick distillery. Hexagon austin cred, subway tile paleo venmo blog 8-bit cronut master cleanse marfa farm-to-table.
+## Project Overview
 
-Live-edge vinyl meh, quinoa umami palo santo narwhal letterpress farm-to-table typewriter chartreuse vice tacos leggings. Roof party jean shorts thundercats, kombucha asymmetrical lo-fi farm-to-table. Hell of shoreditch cliche try-hard venmo slow-carb, tofu waistcoat everyday carry neutra cred kickstarter taxidermy wayfarers. Direct trade banh mi pug skateboard banjo edison bulb. Intelligentsia cliche quinoa synth umami. Trust fund four loko hoodie paleo cray tote bag slow-carb ennui. Williamsburg food truck intelligentsia trust fund. Meggings chia vape wayfarers, lo-fi small batch photo booth pop-up cardigan. Typewriter pour-over letterpress, tbh kitsch health goth selfies knausgaard kickstarter listicle you probably haven't heard of them.
+This project focuses on the **mathematical modeling, analysis, and control system design** of an automotive **active suspension system**.  
+The primary objective is to overcome the inherent trade-off between **ride comfort** (passenger comfort) and **handling stability** (road holding) by introducing an **active force actuator** operating in parallel with passive suspension components.
+
+**📄 Full Documentation:**  
+[View technical report (Google Drive)](https://drive.google.com/file/d/1mTypBeYipgtXAwsrK_uZZkxzaRj4vfiB/view?usp=drive_link)
+
+---
+
+## System Configuration and Modeling
+
+The vehicle dynamics are represented using a **two-degree-of-freedom (2-DOF) linear quarter-car model**, capturing the essential vertical dynamics of the suspension system.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/Quarter-car-model.png" width="65%">
+</p>
+
+- **Sprung Mass ($m_1$):** Represents the vehicle body and passenger load  
+- **Unsprung Mass ($m_2$):** Represents the wheel and tire assembly  
+- **Actuator ($u$):** Hydraulic or electromagnetic actuator generating control force  
+- **Road Disturbance ($w$):** External input representing road irregularities  
+
+The equations of motion are derived using **Newton’s Second Law** and later converted into a **state-space representation** to enable advanced control design.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/Modeling-equations.png" width="75%">
+</p>
+
+---
+
+## Methodology and System Analysis
+
+Before controller synthesis, the system’s fundamental properties were analyzed using **MATLAB**:
+
+- **Controllability:**  
+  The controllability matrix was full rank (**Rank = 4**), confirming that all system states can be driven by the actuator input.
+
+- **Observability:**  
+  The observability matrix also achieved **Rank = 4**, ensuring that all internal states can be reconstructed from measured outputs.
+
+- **Open-Loop Stability:**  
+  Eigenvalue analysis of the state matrix $A$ showed all eigenvalues with **negative real parts**, indicating an inherently stable open-loop system.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/state-space.png" width="75%">
+</p>
+
+---
+
+## Control Strategies
+
+Three control approaches were designed and evaluated:
+
+- **State Feedback Controller:**  
+  Designed using **pole placement**, achieving a settling time below **5 seconds**.
+
+- **Linear Quadratic Regulator (LQR):**  
+  Optimized using **Bryson’s rule**, with weighting matrices  
+  $Q = \mathrm{diag}(10^6, 10^3, 10^4, 10^2)$  
+  to strongly penalize body displacement while limiting actuator effort.
+
+- **PID Controller:**  
+  Implemented for comparison using gains  
+  $K_p = 5000,\; K_i = 1000,\; K_d = 2000$  
+  to regulate suspension displacement.
+
+---
+
+## Technical Results and Validation
+
+The controlled system was subjected to a **0.1 m step road disturbance**.
+
+- **Performance:**  
+  Significant reduction in vertical acceleration of the sprung mass, improving ride comfort.
+
+- **Settling Behavior:**  
+  Both **LQR** and **State Feedback** controllers satisfied the **5-second settling time constraint**.
+
+- **Numerical Simulation:**  
+  Time-domain responses were solved using **Simulink** and a **fourth-order Runge–Kutta (RK4)** integration scheme.
+
+<p align="center">
+  <img src="{{ site.baseurl }}/assets/img/Numerical-solution-displacements.png" width="80%">
+</p>
+
+---
+
+## Summary
+
+This project demonstrates how **modern control techniques** can be applied to automotive suspension systems to simultaneously improve **comfort and handling**.  
+The combination of **state-space modeling**, **optimal control**, and **numerical simulation** provides a robust framework for real-world vehicle dynamics applications.
