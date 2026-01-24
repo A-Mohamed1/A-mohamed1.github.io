@@ -5,40 +5,20 @@ date: 2026-01-06 13:32:20 +0300
 description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
 img:  # Add image post (optional)
 ---
-Mindvalley | Sheikh Zayed 
-Instructor (Part-time) | 07/2023 – 09/2023 | 07/2025 – present 
-• I worked as an instructor in Mindvalley, I teach Python, C++, EV3, Wedo, App Inventor, and Scratch. 
-Junior Teaching Assistant | University of Science and Technology at Zewailcity 
-Python JTA | summer 2023  
-Contributor | NASA Space Apps Challenge 
-Cairo, 2024 
-• I was the team leader and video editor for the team to develop an interactive website illustrating the 
-solar system, providing educational content on each planet with different visual contents.  
-(https://rozenverse.netlify.app/) 
-Plasma Actuators and Flow Control Research | University of Science and Technology at Zewailcity 
-Research Participant | 08/2025 – 09/2025  
-• Engaged in experimental and computational work on plasma actuators and plasma-based flow 
-control for aerodynamic applications. 
-• Investigated electrode geometries and optimized actuator performance through simulations and lab 
-testing. 
-Alliance International Group for Equipment Trading and Logistics – Fire Division 
-Engineering Intern | 07/2025 – 09/2025 
-• Participated in the technical and logistical operations for fire protection systems and related equipment. 
-Robotics and Control Projects | University of Science and Technology at Zewailcity 
-Project Member | 07/2025 – Present 
-• Assisted in the design and development of a linear inverted pendulum for control system studies. 
-•  Collaborated on UAV design and build, integrating aerodynamic design and propulsion systems.
+Instructor (Part-Time) – Mindvalley
+Taught programming and robotics courses including Python, C++, LEGO EV3, WeDo, App Inventor, and Scratch, delivering hands-on learning experiences and adapting technical concepts for different age groups.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Junior Teaching Assistant – University of Science and Technology at Zewail City
+Supported Python programming courses by assisting students with problem-solving, code debugging, and foundational programming concepts.
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+Contributor & Team Leader – NASA Space Apps Challenge (Cairo, 2024)
+Led a multidisciplinary team in developing an interactive educational website visualizing the solar system, and served as the video editor responsible for presenting the project effectively.
 
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Research Participant – Plasma Actuators and Flow Control
+Conducted experimental and computational research on plasma-based flow control for aerodynamic applications, investigating electrode geometries and optimizing actuator performance through simulations and laboratory testing.
+
+Engineering Intern – Alliance International Group (Fire Division)
+Participated in technical and logistical operations related to fire protection systems and equipment, gaining exposure to real-world engineering practices and industry workflows.
+
+Project Member – Robotics, Control, and UAV Projects
+Contributed to the design and development of a linear inverted pendulum for control system studies and collaborated on UAV design and integration, focusing on aerodynamics and propulsion systems.
