@@ -3,7 +3,7 @@ layout: post
 title: Aircraft Pitch Control System Design and Analysis
 date: 2026-01-01 00:00:00 +0300
 description: Modeling, stability analysis, and PID control design for an aircraft's longitudinal dynamics.
-img: system-view.png
+img: System-view.png
 fig-caption: Overview of the aircraft pitch control system
 tags: [Control Systems, Aircraft, PID, MATLAB, SIMULINK]
 ---
