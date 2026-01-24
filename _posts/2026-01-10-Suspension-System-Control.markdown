@@ -51,7 +51,7 @@ Before controller synthesis, the system’s fundamental properties were analyzed
   Eigenvalue analysis of the state matrix $A$ showed all eigenvalues with **negative real parts**, indicating an inherently stable open-loop system.
 
 <p align="center">
-  <img src="{{ site.baseurl }}/assets/img/state-space.png" width="75%">
+  <img src="{{ site.baseurl }}/assets/img/State-space.png" width="75%">
 </p>
 
 ---
@@ -68,10 +68,6 @@ Three control approaches were designed and evaluated:
   $Q = \mathrm{diag}(10^6, 10^3, 10^4, 10^2)$  
   to strongly penalize body displacement while limiting actuator effort.
 
-- **PID Controller:**  
-  Implemented for comparison using gains  
-  $K_p = 5000,\; K_i = 1000,\; K_d = 2000$  
-  to regulate suspension displacement.
 
 ---
 
