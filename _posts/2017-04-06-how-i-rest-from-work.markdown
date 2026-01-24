@@ -8,6 +8,7 @@ fig-caption: # Add figcaption (optional)
 tags:
 ---
 Project Overview: Design and Analysis of a Cold Gas Rocket Engine
+![Project Screenshot]({{ site.baseurl }}/assets/img/Flowchart.png)
 This project involves the comprehensive mathematical modeling, design, and transient performance analysis of a simplified rocket engine system. 
 The study focuses on the gas dynamics of a pressurized oxidizer source and its temporal evolution as pressure depletes during operation.
 System Configuration and Specifications
@@ -29,3 +30,5 @@ The simulation, conducted over a 50-second blowdown period, yielded the followin
 Technical Implementation
 The system was validated using MATLAB simulations to generate thrust-time curves and temporal behaviors for tank pressure and temperature. 
 This analytical approach allowed for a detailed understanding of how initial conditions and thermal additions dictate the lifecycle and propulsion performance of the engine.
+![Project Screenshot]({{ site.baseurl }}/assets/img/MatlabRocket.png)
+
