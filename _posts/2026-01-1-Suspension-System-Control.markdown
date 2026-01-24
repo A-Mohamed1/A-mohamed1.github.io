@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automobile Active Suspension System Control
-date: 2026-01-10 00:00:00 +0300
+date: 2026-01-1 00:00:00 +0300
 img: Quarter-car-model.png
 tags:
 ---
