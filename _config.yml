@@ -1,7 +1,7 @@
 title: Hello, I'm Abdelrahman Mohamed
 description: >
   My name is Abdelrahman Mohamed. I am an aerospace engineering student
-  at the University of Science and Technology. [My CV (PDF)](https://drive.google.com/file/d/1pzgY49Yl7Zo5EU6I9qfacWTYFs1YI_0U/view?usp=drive_link)
+  at the University of Science and Technology.
 
 
 permalink: ':title/'
@@ -11,8 +11,7 @@ url: "https://a-mohamed1.github.io"
 # Author Settings
 author: Abdelrahman Mohamed
 author-img: Abdelrahman-image-cut.jpeg
-about-author: My name is Abdelrahman Mohamed. I am an aerospace engineering student at the University of Science and Technology. 
-[My CV (PDF)](https://drive.google.com/file/d/1pzgY49Yl7Zo5EU6I9qfacWTYFs1YI_0U/view?usp=drive_link)
+about-author: My name is Abdelrahman Mohamed. I am an aerospace engineering student at the University of Science and Technology. [My CV (PDF)](https://drive.google.com/file/d/1pzgY49Yl7Zo5EU6I9qfacWTYFs1YI_0U/view?usp=drive_link)
 social-github: a-mohamed1
 social-linkedin: "abdelrahman-mohamed-15347b284/"
 social-email: s-abdelrahman.sayed@zewailcity.edu.eg
