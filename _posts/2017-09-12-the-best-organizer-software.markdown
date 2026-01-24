@@ -1,22 +1,93 @@
 ---
 layout: post
-title: The Best Organizer Software
-date: 2017-09-12 00:00:00 +0300
-description: You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. # Add post description (optional)
-img: software.jpg # Add image post (optional)
-tags: [Productivity, Software] # add tag
+title: S823 Wind Turbine Blade Design and Analysis
+date: 2026-01-01 00:00:00 +0300
+description: Integrated analytical and computational study of a HAWT blade designed around the S823 airfoil using QBlade and ANSYS.
+img: Blade.png
+tags: [Wind Turbine, Aerodynamics, CFD, ANSYS, QBlade]
 ---
 
-Church-key blog messenger bag, selfies umami man braid mlkshk. Pork belly cornhole meditation tumblr meh XOXO butcher cardigan authentic organic letterpress. Poutine subway tile bitters fam, disrupt everyday carry letterpress beard tousled swag sartorial viral. Retro af 3 wolf moon heirloom, pork belly man bun DIY chillwave. Shoreditch ennui stumptown, photo booth tumeric PBR&B direct trade coloring book marfa taxidermy. Gentrify brunch typewriter woke freegan. Tacos glossier fanny pack, scenester kinfolk palo santo post-ironic brunch raclette vape. Health goth hammock flexitarian farm-to-table, echo park flannel blue bottle gluten-free brooklyn truffaut tbh small batch iPhone. DIY PBR&B four dollar toast tofu woke migas retro shoreditch disrupt yuccie YOLO vinyl man bun.
+## Project Overview: S823 Wind Turbine Blade Design and Analysis
 
-### Church-key blog messenger bag
+This project presents an integrated analytical and computational study of a Horizontal Axis Wind Turbine (HAWT) blade designed around the S823 airfoil. The study transitions from manual aerodynamic optimization to high-fidelity numerical validation using QBlade and ANSYS.
 
-Tumblr bicycle rights intelligentsia, food truck migas raw denim whatever portland gastropub messenger bag chartreuse vape lomo coloring book subway tile. Yr pabst meggings tattooed four dollar toast. Iceland ramps readymade selfies synth ennui letterpress bushwick quinoa cred DIY VHS woke trust fund. Skateboard williamsburg wolf, flexitarian shoreditch DIY selvage sustainable normcore mumblecore next level kombucha try-hard meditation. Gentrify plaid microdosing, master cleanse ugh crucifix pop-up. Wolf bushwick street art tumeric. Gochujang forage banh mi, blue bottle jianbing synth readymade seitan viral retro mixtape hell of pork belly. Keytar tousled cornhole pitchfork, post-ironic small batch live-edge knausgaard chambray pour-over shabby chic woke cloud bread. Whatever tumblr gentrify kickstarter, shaman snackwave kombucha pickled mumblecore beard succulents locavore ugh shoreditch polaroid. Wayfarers crucifix tattooed twee. Yr listicle crucifix fingerstache farm-to-table. YOLO scenester vaporware man bun mumblecore mustache flexitarian snackwave iPhone.
+### System Configuration and Specifications
 
-Hella lo-fi banjo, disrupt tofu prism raclette. Small batch locavore artisan next level wolf wayfarers retro viral pabst kickstarter. Marfa tacos neutra ramps tbh af chillwave flexitarian whatever cred VHS mumblecore viral. Hell of retro vegan chambray tacos VHS four dollar toast tote bag. Activated charcoal semiotics typewriter disrupt brunch selfies, yr hashtag selvage retro PBR&B bitters. Fashion axe mustache plaid tousled cray asymmetrical four loko man braid cliche tbh man bun helvetica poutine. Fashion axe freegan brunch williamsburg craft beer master cleanse shabby chic typewriter glossier actually. Plaid tumblr hexagon neutra slow-carb mumblecore. Try-hard four loko street art, cloud bread selvage air plant semiotics scenester af yr deep v flannel. Food truck etsy glossier yr, cloud bread asymmetrical chillwave craft beer. Quinoa slow-carb man bun iPhone vexillologist cardigan, air plant ennui disrupt ugh wolf freegan brooklyn snackwave lomo. Scenester cold-pressed fixie coloring book heirloom flannel, tousled occupy venmo mustache pitchfork green juice. VHS neutra 8-bit roof party. Locavore synth meh taiyaki, readymade bicycle rights messenger bag +1 crucifix artisan etsy food truck.
+- **Airfoil Profile:** S823 airfoil, optimized for an angle of attack \(\alpha_\mathrm{opt} = 7^\circ\).  
+- **Operational Parameters:** Tip-Speed Ratio \(\lambda = 7\), rotational speed \(400\,\mathrm{rpm}\).  
+- **Blade Geometry:** Span discretized into ten radial stations for precise chord and twist distributions.  
+- **Materials:** Structural analysis assumes wooden blade construction with density \(\rho = 553.6\,\mathrm{kg/m^3}\).  
 
-### Pour-over blue bottle woke listicle
+### Methodology and Technical Analysis
 
-Pour-over blue bottle woke listicle, pitchfork 90's post-ironic scenester poutine ennui four loko ramps kickstarter. Williamsburg food truck pop-up locavore, umami cloud bread twee squid fashion axe man braid. Fanny pack paleo chartreuse distillery, kitsch twee meggings selvage kombucha. Keffiyeh actually prism listicle. Taxidermy authentic iPhone migas vegan copper mug. Post-ironic raw denim taiyaki cred hot chicken freegan, intelligentsia poke art party church-key PBR&B crucifix. Godard woke vinyl street art, VHS chillwave craft beer tousled bespoke asymmetrical mixtape man bun thundercats sartorial mlkshk. Meggings heirloom XOXO gentrify try-hard stumptown. Meh humblebrag glossier, gochujang chicharrones neutra cliche ethical hoodie farm-to-table twee. Messenger bag offal pug bespoke, put a bird on it tote bag literally.
+- **Manual Optimization:** Applied Betz–Schmitz optimum rotor theory to calculate ideal chord lengths and twist angles across the span.  
+- **CFD Simulation:** Used the k-ω SST turbulence model in ANSYS Fluent to capture pressure-velocity interactions and verify thrust.  
+- **Fluid-Structure Interaction (FSI):** Pressure distributions from CFD fed into a structural solver to evaluate stresses.  
+- **Modal Analysis:** Checked natural frequencies to ensure they are much higher than the operating frequency \(f_\mathrm{op} = 6.67\,\mathrm{Hz}\), eliminating resonance risk.  
 
-Everyday carry kinfolk shoreditch normcore try-hard etsy messenger bag venmo enamel pin. Try-hard fanny pack thundercats farm-to-table retro twee. Godard photo booth tofu 90's. Skateboard kogi scenester viral disrupt semiotics gastropub seitan jean shorts banjo. Humblebrag knausgaard waistcoat mixtape. Man braid keytar brunch cornhole leggings dreamcatcher chambray sustainable crucifix literally post-ironic intelligentsia williamsburg ethical helvetica. Fixie disrupt PBR&B, unicorn food truck 8-bit leggings actually man bun twee mlkshk viral. Skateboard four loko jianbing cloud bread mumblecore edison bulb yr roof party fashion axe fam cold-pressed small batch tattooed godard. Bushwick yuccie thundercats schlitz listicle skateboard quinoa. Gentrify hot chicken pop-up keytar master cleanse pork belly. Irony pitchfork la croix neutra freegan. Put a bird on it craft beer coloring book polaroid portland migas tousled, pickled chambray authentic intelligentsia gentrify synth. Letterpress tumblr wolf normcore selvage. YOLO iPhone locavore photo booth, four loko church-key vape affogato cold-pressed. Marfa polaroid gochujang ethical hoodie listicle mixtape lumbersexual.
+### Key Performance Results
+
+- **Power Output:** \(P \approx 1025.76\,\mathrm{W}\), Power Coefficient \(C_p = 0.3657\)  
+- **Structural Safety:** Maximum von Mises stress \(\sigma_\mathrm{max} = 1.331\,\mathrm{MPa}\), at the blade root.  
+- **Deflection:** Maximum tip deflection \( \delta_\mathrm{tip} = 0.436\,\mathrm{mm} \), showing high structural stiffness.  
+
+---
+
+## Key Mathematical Frameworks
+
+### 1. Aerodynamic Inflow Angle
+
+The inflow angle \(\phi\) at each radial station depends on the local tip-speed ratio \(\lambda_r\):
+
+$$
+\phi = \frac{3}{2} \tan^{-1}\left(\frac{\lambda_r}{1}\right)
+$$
+
+### 2. Schmitz/Betz Chord Distribution
+
+The chord length \(c(r)\) is calculated to optimize lift:
+
+$$
+c(r) = \frac{B C_L}{16 \pi r} \left[ \sin\left(\frac{3}{1} \tan^{-1}\frac{\lambda_r}{1} \right) \right]^2
+$$
+
+### 3. Twist Distribution
+
+The twist angle \(\beta(r)\) is:
+
+$$
+\beta(r) = \phi - \alpha_\mathrm{opt}
+$$
+
+### 4. Power Coefficient
+
+The aerodynamic efficiency of the rotor:
+
+$$
+C_p = \frac{P}{0.5 \rho A V^3}
+$$
+
+Where \(P\) is power, \(\rho\) is air density, \(A\) is swept area, and \(V\) is wind speed.
+
+### 5. Modal Stability
+
+To avoid resonance, operating frequency \(f_\mathrm{op}\) must be much smaller than the first natural frequency \(f_{n1}\):
+
+$$
+f_\mathrm{op} = \frac{400\,\mathrm{rpm}}{60} = 6.67\,\mathrm{Hz}, \quad f_{n1} \approx 76\,\mathrm{Hz} \gg 6.67\,\mathrm{Hz} \quad \text{(Safe)}
+$$
+
+---
+
+### 📄 Full Project Documentation
+
+You can access the full documentation [here](https://drive.google.com/file/d/12cDej2NNwr6tej9bXjRQh-D6GTiUHT-S/view?usp=drive_link).
+
+---
+
+<!-- MathJax Integration for LaTeX -->
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
