@@ -3,16 +3,16 @@ layout: post
 title: Design and Analysis of a Cold Gas Rocket Engine
 date: 2026-01-01 13:32:20 +0300
 description: # Add post description (optional)
-img: i-rest.jpg # Add image post (optional)
+img: # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Holidays, Hawaii]
+tags:
 ---
 Project Overview: Design and Analysis of a Cold Gas Rocket Engine
-This project involves the comprehensive mathematical modeling, design, and transient performance analysis of a simplified rocket engine system. The study focuses on the gas dynamics of a pressurized oxidizer source and its temporal evolution as pressure depletes during operation.
+This project involves the comprehensive mathematical modeling, design, and transient performance analysis of a simplified rocket engine system. 
+The study focuses on the gas dynamics of a pressurized oxidizer source and its temporal evolution as pressure depletes during operation.
 System Configuration and Specifications
 The engine model consists of three primary components designed to simulate high-performance propulsion:
-• Pressurized Tank: A 0.5 m^3
-  cold gas tank pressurized with air to an initial 200 bar.
+• Pressurized Tank: A 0.5 m^3 cold gas tank pressurized with air to an initial 200 bar.
 • Combustor (Heat Addition Duct): A one-dimensional duct that simulates a combustion chamber by adding thermal energy, raising the gas temperature to a maximum of 2200 K.
 • Convergent-Divergent (CD) Nozzle: A nozzle with fixed geometry designed at a 100-bar reference point to optimize mass flow rates and expansion.
 Methodology and Physical Modeling
@@ -27,5 +27,5 @@ The simulation, conducted over a 50-second blowdown period, yielded the followin
 • Transient Behavior: A significant performance discontinuity occurs at approximately 14 seconds, representing the transition where tank pressure becomes insufficient to maintain supersonic exit flow, causing a shock to move into the nozzle.
 • Physical Consistency: The final design produced a combustor diameter of 0.0861 m, which provides a cross-sectional area roughly 5.8 times larger than the throat to ensure efficient heat addition.
 Technical Implementation
-The system was validated using MATLAB simulations to generate thrust-time curves and temporal behaviors for tank pressure and temperature. This analytical approach allowed for a detailed understanding of how initial conditions and thermal additions dictate the lifecycle and propulsion performance of the engine.
-
+The system was validated using MATLAB simulations to generate thrust-time curves and temporal behaviors for tank pressure and temperature. 
+This analytical approach allowed for a detailed understanding of how initial conditions and thermal additions dictate the lifecycle and propulsion performance of the engine.
