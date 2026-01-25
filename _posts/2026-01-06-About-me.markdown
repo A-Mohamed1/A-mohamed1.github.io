@@ -14,6 +14,7 @@ Supported Python programming courses by assisting students with problem-solving,
 
 • Contributor & Team Leader – NASA Space Apps Challenge (Cairo, 2024)
 Led a multidisciplinary team in developing an interactive educational website visualizing the solar system, and served as the video editor responsible for presenting the project effectively.
+[View website]((https://rozenverse.netlify.app/))
 
 • Research Participant – Plasma Actuators and Flow Control 08/2025 – 09/2025 
 Conducted experimental and computational research on plasma-based flow control for aerodynamic applications, investigating electrode geometries and optimizing actuator performance through simulations and laboratory testing.
