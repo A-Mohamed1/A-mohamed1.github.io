@@ -17,8 +17,6 @@ This project involves the comprehensive mathematical modeling, design, and trans
 **Documentation:**  
 [View full technical report (Google Drive)](https://drive.google.com/file/d/1JaMCLVBxpLGqF0QaDhQRlJG_UjNIgV9N/view?usp=sharing)
 
-The study focuses on the gas dynamics of a pressurized oxidizer source and its temporal evolution as tank pressure depletes during operation.
-
 ---
 
 ## System Configuration and Specifications
